@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+char toLower(char ch){
+    if(ch >= 'A' && ch <= 'Z') return ch - 'A' + 'a';
+    return ch;
+}
+int main(){
+    char ch = 'A';
+    cout << "Lowercase: " << toLower(ch);
+    return 0;
+}
