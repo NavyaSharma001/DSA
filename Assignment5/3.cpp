@@ -6,34 +6,18 @@ class Node{
         int data;
         Node* next;
 };
-
-void display(Node *p)
-{
+void display(Node *p){
     if(p!=NULL)
-    {
-        cout<<p->data<<"->";
-        display(p->next);
-    }
+    { cout<<p->data<<"->";
+        display(p->next);}
     else
-    {
-        cout<<"NULL"<<endl;
-    }
+     cout<<"NULL"<<endl;
 }
-
 int count(Node *p)
-{
-    if(p == nullptr)
-    {
-        return 0;
-    }
-    else
-    {
-        return count(p->next) + 1;
-    }
-}
-
-// Method 1: Using count - O(3n/2) traversals
-int findMiddleByCount(Node* head)
+{ if(p == nullptr)
+     return 0;
+else        return count(p->next) + 1;
+}int findMiddleByCount(Node* head)
 {
     if(head == nullptr)
     {
