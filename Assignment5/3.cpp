@@ -52,8 +52,6 @@ int findMiddleByCount(Node* head)
     
     return temp->data;
 }
-
-// Method 2: Two pointer technique (Tortoise and Hare) - O(n/2) traversals
 int findMiddleByTwoPointer(Node* head)
 {
     if(head == nullptr)
